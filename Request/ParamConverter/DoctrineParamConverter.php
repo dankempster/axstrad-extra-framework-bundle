@@ -22,7 +22,7 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 
 /**
- * Tjs\Bundle\Framework\Request\ParamConverter\DoctrineParamConverter
+ * Axstrad\Bundle\ExtraFrameworkBundle\Request\ParamConverter\DoctrineParamConverter
  *
  * Extends the standard DoctrineParamConverter so that the Doctrine Entity classname can be specified as a DI container
  * paramerter. Also if the Repository returns a PhpOption\Option object, it's value will be extracted and returned or a
@@ -107,7 +107,7 @@ class DoctrineParamConverter extends SensioDoctrineParamConverter
      */
     protected function convertClassParamToClassName(ConfigurationInterface $configuration)
     {
-        if (preg_match('/%(.*)%/', $configuration->getClass(), $matches)) {
+        if (preg_match('/^%(.*)%$/', $configuration->getClass(), $matches)) {
             $param = $this->container->getParameter($matches[1]);
             $configuration->setClass($param);
         }
