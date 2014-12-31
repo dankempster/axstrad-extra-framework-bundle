@@ -82,7 +82,7 @@ class DoctrineParamConverter extends SensioDoctrineParamConverter
      */
     protected function convertClassParamToClassName(ConfigurationInterface $configuration)
     {
-        if (!$configuration instanceof ParamConverterConfig) {
+        if ( ! $configuration instanceof ParamConverterConfig) {
             return;
         }
 
