@@ -13,7 +13,6 @@
 namespace Axstrad\Bundle\ExtraFrameworkBundle\Request\ParamConverter;
 
 use Doctrine\Common\Persistence\ManagerRegistry;
-use PhpOption\Option as PhpOption;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ConfigurationInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter as ParamConverterConfig;
 use Sensio\Bundle\FrameworkExtraBundle\Request\ParamConverter\DoctrineParamConverter as SensioDoctrineParamConverter;
@@ -24,8 +23,7 @@ use Symfony\Component\HttpFoundation\Request;
  * Axstrad\Bundle\ExtraFrameworkBundle\Request\ParamConverter\DoctrineParamConverter
  *
  * Extends the standard DoctrineParamConverter so that the Doctrine Entity classname can be specified as a DI container
- * paramerter. Also if the Repository returns a PhpOption\Option object, it's value will be extracted and returned or a
- * NotFoundException will be thrown.
+ * paramerter.
  *
  * @author Dan Kempster <dev@dankempster.co.uk>
  * @license MIT
