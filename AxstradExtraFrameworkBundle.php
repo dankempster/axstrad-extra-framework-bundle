@@ -1,5 +1,5 @@
 <?php
-namespace Axstrad\Bundle\ExtraFrameworkBundle\Exception;
+namespace Axstrad\Bundle\ExtraFrameworkBundle;
 
 use Axstrad\Bundle\ExtraFrameworkBundle\DependencyInjection\Compiler\OverrideSensioDoctrineParamConverter;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
