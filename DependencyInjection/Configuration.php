@@ -39,7 +39,7 @@ class Configuration implements ConfigurationInterface
                     ->children()
                         ->scalarNode('param_converter')
                             ->cannotBeEmpty()
-                            ->defaultValue('Axstrad\Bundle\ExtraFrameworkBundle\Request\DoctrineParamConverter')
+                            ->defaultValue('Axstrad\Bundle\ExtraFrameworkBundle\Request\ParamConverter\DoctrineParamConverter')
                         ->end()
                     ->end()
                 ->end()
