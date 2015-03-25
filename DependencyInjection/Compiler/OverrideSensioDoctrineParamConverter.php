@@ -29,8 +29,10 @@ class OverrideSensioDoctrineParamConverter implements CompilerPassInterface
     {
         $definition = $container->getDefinition('sensio_framework_extra.converter.doctrine.orm');
         $definition->setClass(
-            $container->getParameter('axstrad_framework.request.doctrine_param_converter.class')
+            $container->getParameter('axstrad_extra_framework.class.param_converter')
         );
+
+        // TODO: Find a better way!
         $definition->addArgument(new Reference('service_container'));
     }
 }
