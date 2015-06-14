@@ -24,9 +24,9 @@ matrix:
   include:
     # Test the latest PHP and Symfony Next
     - php: 5.6
-      env: SYMFONY_VERSION="2.7.*"
+      env: SYMFONY_VERSION="dev-master"
   allow_failures:
-    - env: SYMFONY_VERSION="2.7.*"
+    - env: SYMFONY_VERSION="dev-master"
     - php: hhvm
   fast_finish: true
 
