@@ -17,7 +17,7 @@
         "doctrine/common": "~2.3",
         "phpoption/phpoption": "~1.0",
         "sensio/framework-extra-bundle": "~2.3 || ~3.0",
-        "symfony/symfony": "~2.3"
+        "symfony/symfony": "~2.3,<2.7"
     },
 
     "require-dev": {
