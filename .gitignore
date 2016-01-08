@@ -1,9 +1,15 @@
+build/
+!build/*.xml
 vendor/
 phpunit.xml
 composer.lock
-
-# Build Artifacts
+Tests/UseCases/*/Cache
+Tests/UseCases/*/Logs
 cache.properties
-build/
-!build/php*.xml
 
+bin
+
+.idea/workspace.xml
+.idea/dataSources.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
