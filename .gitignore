@@ -2,6 +2,8 @@ build/
 !build/*.xml
 vendor/
 phpunit.xml
+
+# Build Artifacts
 composer.lock
 Tests/UseCases/*/Cache
 Tests/UseCases/*/Logs
